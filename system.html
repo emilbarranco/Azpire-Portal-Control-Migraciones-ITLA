@@ -1,0 +1,930 @@
+<!-- *****************************************************
+    DISCLAIMER:
+
+    ESTA PAGINA WEB NO ES VALIDA, ESTA CONSTRUIDA CON PROPOSITOS 
+    DE APRENDIZAJE EN ***ITLA***
+
+    PLANTILLA DE BOOTSTRAP MODIFICADA SEGUN LO REQUERIDO
+    ***GRATIS*** => https://startbootstrap.com/themes/sb-admin-2/
+    
+
+    ADMINISTRACION DE PROYECTOS DE SOFTWARE
+    AZPIRE - PORTAL DE CONTROL DE MIGRACIONES
+    2020-C-2
+    << EMIL PEREZ BARRANCO || ALLYSSON MOSCOSO MENA >>
+ ******************************************************** -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Azpire || Portal de Control de Migraciones</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-text mx-3">Azpire <sup>v1.0</sup></div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Herramientas
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Reportes</span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="#">Reportes Generados</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseUtilities"
+            aria-expanded="true"
+            aria-controls="collapseUtilities"
+          >
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Ajustes</span>
+          </a>
+          <div
+            id="collapseUtilities"
+            class="collapse"
+            aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="#">Ajustes</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Opciones
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapsePages"
+            aria-expanded="true"
+            aria-controls="collapsePages"
+          >
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Opciones</span>
+          </a>
+          <div
+            id="collapsePages"
+            class="collapse"
+            aria-labelledby="headingPages"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Usuario</h6>
+              <a class="collapse-item" href="login.html">Ajustes de Cuenta</a>
+              <a class="collapse-item" href="#">Mensajes</a>
+              <a class="collapse-item" href="#">Feedback</a>
+              <div class="collapse-divider"></div>
+              <h6 class="collapse-header">Other Pages:</h6>
+              <a class="collapse-item" href="#">404 Page</a>
+              <a class="collapse-item" href="#">Blank Page</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Estadisticas</span></a
+          >
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tablas</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search for..."
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="alertsDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell fa-fw"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div
+                  class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="alertsDropdown"
+                >
+                  <h6 class="dropdown-header">
+                    Alerts Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 12, 2019</div>
+                      <span class="font-weight-bold"
+                        >A new monthly report is ready to download!</span
+                      >
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 7, 2019</div>
+                      $290.29 has been deposited into your account!
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 2, 2019</div>
+                      Spending Alert: We've noticed unusually high spending for
+                      your account.
+                    </div>
+                  </a>
+                  <a
+                    class="dropdown-item text-center small text-gray-500"
+                    href="#"
+                    >Show All Alerts</a
+                  >
+                </div>
+              </li>
+
+              <!-- Nav Item - Messages -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="messagesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="messagesDropdown"
+                >
+                  <h6 class="dropdown-header">
+                    Message Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="https://source.unsplash.com/fn_BT9fwg_E/60x60"
+                        alt=""
+                      />
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">
+                        Hi there! I am wondering if you can help me with a
+                        problem I've been having.
+                      </div>
+                      <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="https://source.unsplash.com/AU4VPcFN4LE/60x60"
+                        alt=""
+                      />
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">
+                        I have the photos that you ordered last month, how would
+                        you like them sent to you?
+                      </div>
+                      <div class="small text-gray-500">Jae Chun · 1d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="https://source.unsplash.com/CS2uCrpNzJY/60x60"
+                        alt=""
+                      />
+                      <div class="status-indicator bg-warning"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">
+                        Last month's report looks great, I am very happy with
+                        the progress so far, keep up the good work!
+                      </div>
+                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                        alt=""
+                      />
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">
+                        Am I a good boy? The reason I ask is because someone
+                        told me that people say this to all dogs, even if they
+                        aren't good...
+                      </div>
+                      <div class="small text-gray-500">
+                        Chicken the Dog · 2w
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="dropdown-item text-center small text-gray-500"
+                    href="#"
+                    >Read More Messages</a
+                  >
+                </div>
+              </li>
+
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Allysson Moscoso</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="data:image/jpeg;base64,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"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+              <a
+                href="#"
+                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+                ><i class="fas fa-download fa-sm text-white-50"></i> Generar
+                Reporte</a
+              >
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Promedio Pasajeros
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          1,324/día
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-user fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                          Entradas Aprobadas
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          10,600/semana
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-passport fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                        >
+                          Tareas Completadas
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                            >
+                              50%
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="progress progress-sm mr-2">
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 50%;"
+                                aria-valuenow="50"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i
+                          class="fas fa-clipboard-list fa-2x text-gray-300"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
+                        >
+                          Solicitudes Pasajeros
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          18
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-address-book fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+
+            <!-- Datos del Pasajero -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  Datos del Pasajero
+                </h6>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered"
+                    id="dataTable"
+                    width="100%"
+                    cellspacing="0"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Número de Pasaporte</th>
+                        <th>Nombre/s</th>
+                        <th>Apellido/s</th>
+                        <th>Fecha de Entrada</th>
+                        <th>Fecha de Salida</th>
+                        <th>Codigo de Barras Pasaporte</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Número de Pasaporte</th>
+                        <th>Nombre/s</th>
+                        <th>Apellido/s</th>
+                        <th>Fecha de Entrada</th>
+                        <th>Fecha de Salida</th>
+                        <th>Codigo de Barras Pasaporte</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>8987876</td>
+                        <td>Angela Lynn</td>
+                        <td>Doe</td>
+                        <td>07/01/2020</td>
+                        <td>07/08/2020</td>
+                        <td>#5745756856858</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Area Chart -->
+              <div class="col-xl-8 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Solicitudes/Consultas Base de Datos Externa
+                    </h6>
+                    <div class="dropdown no-arrow">
+                      <a
+                        class="dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i
+                          class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"
+                        ></i>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <div class="dropdown-header">Seleccionar Opciones:</div>
+                        <a class="dropdown-item" href="#">Opcion</a>
+                        <a class="dropdown-item" href="#">Otra Opcion</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tercera Opcion</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="myAreaChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pie Chart -->
+              <div class="col-xl-4 col-lg-5">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <h6 class="m-0 font-weight-bold text-primary">Resumen</h6>
+                    <div class="dropdown no-arrow">
+                      <a
+                        class="dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i
+                          class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"
+                        ></i>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <div class="dropdown-header">Seleccionar Opciones:</div>
+                        <a class="dropdown-item" href="#">Opcion</a>
+                        <a class="dropdown-item" href="#">Otra Opcion</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tercera Opcion</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                      <canvas id="myPieChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-center small">
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-primary"></i> Aprobados
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-success"></i> Denegados
+                      </span>
+                      <span class="mr-2">
+                        <i class="fas fa-circle text-info"></i> Pendientes
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Content Column -->
+              <div class="col-lg-12 mb-4">
+                <!-- Project Card Example -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Estadisticas
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="small font-weight-bold">
+                      Mejora Eficiencia <span class="float-right">35%</span>
+                    </h4>
+                    <div class="progress mb-4">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        style="width: 35%;"
+                        aria-valuenow="35"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <h4 class="small font-weight-bold">
+                      Control de Migracion <span class="float-right">40%</span>
+                    </h4>
+                    <div class="progress mb-4">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 40%;"
+                        aria-valuenow="40"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <h4 class="small font-weight-bold">
+                      Solicitudes de Aprobacion
+                      <span class="float-right">60%</span>
+                    </h4>
+                    <div class="progress mb-4">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 60%;"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <h4 class="small font-weight-bold">
+                      Solicitudes Base de Datos Externa
+                      <span class="float-right">80%</span>
+                    </h4>
+                    <div class="progress mb-4">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        style="width: 80%;"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span
+                >Azpire at ITLA &copy; Portal de Control de Migraciones
+                2020</span
+              >
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
